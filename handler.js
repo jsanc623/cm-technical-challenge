@@ -11,10 +11,10 @@ module.exports.reverser = (input) => {
   
   console.log("Output", output)
   return {
-    "statusCode": 200,
-    "body": {
-      "message": "Thank you for using the reverser!",
-      "payload": output
-    }
+    statusCode: 200,
+    body: JSON.stringify({
+      message: "Thank you for using the reverser!",
+      payload: output
+    })
   }
 }
