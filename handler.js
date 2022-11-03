@@ -4,9 +4,9 @@ module.exports.reverser = (input) => {
   console.log("Reverser::begin")
   let output = ""
 
-  console.log("Input", input)
-  for(let i = input.length - 1; i >= 0; i--){
-    output = output + input[i]
+  console.log("Input", input.body)
+  for(let i = input.body.length - 1; i >= 0; i--){
+    output = output + input.body[i]
   }
   
   console.log("Output", output)
