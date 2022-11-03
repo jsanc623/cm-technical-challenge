@@ -15,6 +15,6 @@ module.exports.reverser = (input) => {
     body: JSON.stringify({
       message: "Thank you for using the reverser!",
       payload: output
-    })
+    },)
   }
 }
